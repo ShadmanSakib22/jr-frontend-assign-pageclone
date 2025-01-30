@@ -4,18 +4,66 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --foreground: #000000;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), sans-serif;
+}
+
+@layer utilities {
+  .bg-clip-hero-container {
+    clip-path: polygon(0px 0px, 100% 0px, 100% 81%, 0% 100%);
+  }
+
+  .shadow-button-primary {
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+      var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+}
+
+@layer components {
+  .text-head-1 {
+    @apply text-[56px] leading-[115%] tracking-[-1.12px] font-semibold lg:text-[80px] lg:leading-[115%] lg:tracking-[-1.6px];
+  }
+
+  .text-head-2 {
+    @apply text-[32px] leading-[120%] font-semibold lg:text-[56px] lg:leading-[110%];
+  }
+
+  .text-head-3 {
+    @apply text-[24px] leading-[1.5] font-semibold lg:text-[40px] lg:leading-[120%];
+  }
+
+  .text-head-4 {
+    @apply text-[18px] leading-[130%] font-semibold lg:text-[24px] lg:leading-[130%];
+  }
+
+  .text-head-5 {
+    @apply text-[16px] leading-[160%] font-semibold lg:text-[16px] lg:leading-[160%];
+  }
+
+  .text-head-6 {
+    @apply text-[12px] leading-[1.5] tracking-[1.44px] font-bold lg:text-[16px] lg:leading-[1.5] lg:tracking-[2.56px];
+  }
+
+  .text-link {
+    @apply text-[18px] leading-[23px] font-semibold;
+  }
+}
+
+.home-hero-section {
+  background-position: 0% 0%;
+  background-image: radial-gradient(
+    134.02% 81.35% at -9.66% 129.92%,
+    rgb(0, 233, 234) 0%,
+    rgb(31, 128, 240) 52.08%,
+    rgb(0, 91, 196) 100%
+  );
+  background-size: auto;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-clip: border-box;
 }
