@@ -1,13 +1,19 @@
 import React from "react";
+import Image from "next/image";
 
-const PrimaryBtn = ({ width = "244px", text = "Enter Text", href = "#" }) => {
+const PrimaryBtn = ({ text = "Input Text", href = "#" }) => {
   return (
     <a
-      className={`py-[14px] md:py-[15.5px] w-[${width}] rounded-[3px] bg-orange shadow-button-primary text-link flex gap-2 items-center justify-center hover:gap-4 transition-all duration-500 ease-in-out`}
+      className={`w-[full] py-[14px] md:py-[15.5px] rounded-[3px] bg-orange shadow-button-primary text-link flex gap-2 items-center justify-center hover:gap-4 transition-all duration-500 ease-in-out`}
       href={href}
     >
       <div>{text}</div>
-      <div className="text-[11px] leading-[23px] font-semibold">&#62;</div>
+      <Image
+        src="/icons/ChevronRightWhite.svg"
+        alt="ChevronRightWhite"
+        width={6}
+        height={9}
+      />
     </a>
   );
 };
