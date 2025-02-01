@@ -6,6 +6,7 @@ import Image from "next/image";
 const HeroMotion = () => {
   const backgroundRef = useRef(null);
   const foregroundRef = useRef(null);
+  const mobileRef = useRef(null);
 
   useEffect(() => {
     // Slide-in animation on first load
@@ -13,7 +14,7 @@ const HeroMotion = () => {
       opacity: 0,
       x: -50,
       y: -50,
-      duration: 1,
+      duration: 1.5,
       ease: "power2.out",
     });
 
@@ -21,7 +22,15 @@ const HeroMotion = () => {
       opacity: 0,
       x: 50,
 
-      duration: 1,
+      duration: 1.5,
+      ease: "power2.out",
+    });
+
+    gsap.from(mobileRef.current, {
+      opacity: 0,
+      x: 50,
+      y: -100,
+      duration: 1.5,
       ease: "power2.out",
     });
 
@@ -87,9 +96,9 @@ const HeroMotion = () => {
       <div className="block lg:hidden overflow-hidden absolute top-[-18%] left-[9%] inset-0 w-full h-full">
         {/* TODO mobile spotlight - animate slide from top right to bottom left */}
         <Image
-          ref={foregroundRef}
+          ref={mobileRef}
           src="/backgrounds/hero-an-mobile.svg"
-          alt="Foreground"
+          alt="Background"
           aria-hidden="true"
           fill
           className="object-fill "

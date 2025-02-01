@@ -56,6 +56,8 @@ body {
   }
 }
 
+/*------------------------------------------------------------------*/
+/*---------------------HOME PAGE STYLES-----------------------------*/
 .home-hero-section {
   background-position: 0% 0%;
   background-image: radial-gradient(
@@ -103,3 +105,5 @@ body {
 .bg-clip-hero-image-mobile {
   clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
 }
+
+/*---------------------END HOME PAGE STYLES-----------------------------*/
