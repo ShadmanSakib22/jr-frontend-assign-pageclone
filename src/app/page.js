@@ -7,6 +7,7 @@ import HomeSec3Swiper from "@/components/HomeSec3Swiper";
 import HomeSec4Swiper from "@/components/HomeSec4Swiper";
 import HomeSec5Stats from "@/components/HomeSec5Stats";
 import AssociatedFirms from "@/components/AssociatedFirms";
+import CtaSec from "@/components/CtaSec";
 
 export default function Home() {
   return (
@@ -118,6 +119,8 @@ export default function Home() {
         </div>
         <AssociatedFirms />
       </section>
+
+      <CtaSec />
     </main>
   );
 }

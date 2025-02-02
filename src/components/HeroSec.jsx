@@ -20,7 +20,10 @@ const HeroSec = () => {
             </header>
 
             <div className="w-full lg:w-[244px] mb-[32px] lg:mb-0 ">
-              <PrimaryBtn text="Reach Out to Us" href="/contact" />
+              <PrimaryBtn
+                text="Reach Out to Us"
+                href="https://www.linkedin.com/in/shadman-sakib-3b8bb3298/"
+              />
             </div>
           </div>
         </div>

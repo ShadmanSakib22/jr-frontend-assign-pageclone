@@ -107,6 +107,16 @@ body {
   clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
 }
 
+.bg-cta-style {
+  background: radial-gradient(
+    62.05% 69.64% at 33.72% -3.27%,
+    rgb(0, 233, 234) 0%,
+    rgb(31, 128, 240) 52.08%,
+    rgb(0, 91, 196) 100%
+  );
+  clip-path: polygon(0 0, 100% 49%, 100% 100%, 0% 100%);
+}
+
 /*---------------------END HOME PAGE STYLES-----------------------------*/
 
 /* Define the keyframes once */
