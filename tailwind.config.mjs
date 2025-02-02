@@ -32,6 +32,8 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         orange: "#fe8b53",
+        blueMain: "#1f80f0",
+        blueText: "#0b305b",
       },
     },
   },

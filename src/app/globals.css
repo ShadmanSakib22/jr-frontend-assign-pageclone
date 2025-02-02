@@ -54,6 +54,10 @@ body {
   .text-link {
     @apply text-[18px] leading-[23px] font-semibold;
   }
+
+  .text-body-1 {
+    @apply text-sm lg:text-base text-[#164377];
+  }
 }
 
 /*------------------------------------------------------------------*/
@@ -87,7 +91,7 @@ body {
 }
 
 .lg\:bg-clip-hero-container {
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 97%);
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
 }
 
 @media (min-width: 1280px) {
@@ -96,14 +100,58 @@ body {
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1280px) {
-  .lg\:bg-clip-hero-container {
-    clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
-  }
-}
-
 .bg-clip-hero-image-mobile {
   clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
 }
 
 /*---------------------END HOME PAGE STYLES-----------------------------*/
+
+/* Define the keyframes once */
+@keyframes motion-translate {
+  0% {
+    transform: translateY(0px);
+  }
+  10% {
+    transform: translateY(2px);
+  }
+  20% {
+    transform: translateY(4px);
+  }
+  30% {
+    transform: translateY(6px);
+  }
+  40% {
+    transform: translateY(8px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  60% {
+    transform: translateY(8px);
+  }
+  70% {
+    transform: translateY(6px);
+  }
+  80% {
+    transform: translateY(4px);
+  }
+  90% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Different durations */
+.motion-translate-8s {
+  animation: motion-translate 8s ease-in-out infinite;
+}
+
+.motion-translate-6s {
+  animation: motion-translate 6s ease-in-out infinite;
+}
+
+.motion-translate-5s {
+  animation: motion-translate 5s ease-in-out infinite;
+}

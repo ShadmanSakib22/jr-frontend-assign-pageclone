@@ -72,7 +72,7 @@ const HeroMotion = () => {
 
   return (
     <>
-      <div className="hidden lg:block absolute top-[-4px] left-[-4px] inset-0 w-full h-full">
+      <div className="hidden lg:block absolute top-[-4px] left-[-4px] inset-0 w-full h-full overflow-hidden">
         <Image
           ref={backgroundRef}
           src="/backgrounds/hero-an-bg.svg"
@@ -93,15 +93,14 @@ const HeroMotion = () => {
         />
       </div>
 
-      <div className="block lg:hidden overflow-hidden absolute top-[-18%] left-[9%] inset-0 w-full h-full">
-        {/* TODO mobile spotlight - animate slide from top right to bottom left */}
+      <div className="block lg:hidden overflow-hidden absolute w-[110%] h-[65%] top-0 left-0 blur-sm ">
         <Image
           ref={mobileRef}
           src="/backgrounds/hero-an-mobile.svg"
           alt="Background"
           aria-hidden="true"
           fill
-          className="object-fill "
+          className="object-cover "
           priority
         />
       </div>
