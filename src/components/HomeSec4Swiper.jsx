@@ -75,7 +75,7 @@ const HomeSec4Swiper = () => {
           <button
             key={index}
             className={`px-[28px] lg:px-[38px] xl:px-[48px] py-[6px] xl:py-[8px] rounded-[200px] transition-colors duration-300  hover:bg-[#F5FAFF]  ${
-              activeIndex === index ? "bg-[#b9d9ff] " : "bg-inherit"
+              activeIndex === index ? "bg-blueHighlight " : "bg-inherit"
             }`}
             onClick={() => handleTabClick(index)}
           >

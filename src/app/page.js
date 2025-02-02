@@ -5,6 +5,7 @@ import HomeSec2Image from "@/components/HomeSec2Image";
 import HomeSec3Cards from "@/components/HomeSec3Cards";
 import HomeSec3Swiper from "@/components/HomeSec3Swiper";
 import HomeSec4Swiper from "@/components/HomeSec4Swiper";
+import HomeSec5Stats from "@/components/HomeSec5Stats";
 
 export default function Home() {
   return (
@@ -106,6 +107,13 @@ export default function Home() {
       </section>
 
       <SecBreak />
+
+      <section className="container mb-4">
+        <h6 className="text-head-6 text-blueMain font-montserrat text-center pb-10 md:pb-8">
+          TRUSTED BY THE BEST
+        </h6>
+        <HomeSec5Stats />
+      </section>
     </main>
   );
 }
