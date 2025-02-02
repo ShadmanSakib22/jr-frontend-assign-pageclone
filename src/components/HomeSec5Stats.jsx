@@ -17,7 +17,7 @@ const statsData = [
     number: 200,
     suffix: "m",
     prefix: ">",
-    description: "End Users",
+    description: "Customers Each",
   },
 ];
 
