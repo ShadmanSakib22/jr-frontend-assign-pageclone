@@ -1,8 +1,10 @@
 import Image from "next/image";
 import HeroSec from "@/components/HeroSec";
+import SecBreak from "@/components/SecBreak";
 import HomeSec2Image from "@/components/HomeSec2Image";
 import HomeSec3Cards from "@/components/HomeSec3Cards";
 import HomeSec3Swiper from "@/components/HomeSec3Swiper";
+import HomeSec4Swiper from "@/components/HomeSec4Swiper";
 
 export default function Home() {
   return (
@@ -20,7 +22,7 @@ export default function Home() {
               Uncovering new ways to delight customers
             </h2>
             {/*Image*/}
-            <div className="block lg:hidden">
+            <div className="block md:hidden">
               <HomeSec2Image />
             </div>
             <div className="lg:pt-2 ">
@@ -45,21 +47,13 @@ export default function Home() {
             </div>
           </div>
           {/*Image*/}
-          <div className="hidden lg:block">
+          <div className="hidden md:block">
             <HomeSec2Image />
           </div>
         </div>
       </section>
 
-      <div className="my-[64px] md:my-[24px] w-full min-h-[60px] max-h-[240px] ">
-        <Image
-          src={"/backgrounds/polygonbreak.svg"}
-          alt="..."
-          width={1920}
-          height={240}
-          className="w-full h-full object-cover"
-        />
-      </div>
+      <SecBreak />
 
       <section className="container md:mb-[128px]">
         <header className="space-y-4 md:space-y-6 text-center">
@@ -95,15 +89,23 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="my-[64px] w-full min-h-[60px] max-h-[240px] md:hidden">
-        <Image
-          src={"/backgrounds/polygonbreak.svg"}
-          alt="..."
-          width={1920}
-          height={240}
-          className="w-full h-full object-cover"
-        />
+      <div className="block md:hidden">
+        <SecBreak />
       </div>
+
+      <section className="container">
+        <header className="text-center space-y-4 md:space-y-6">
+          <h6 className="text-head-6 uppercase text-blueMain font-montserrat">
+            TECHNOLOGY BUILT FOR YOU
+          </h6>
+          <h2 className="whitespace-pre-line text-head-2 text-blueText font-montserrat">
+            The future of finance
+          </h2>
+        </header>
+        <HomeSec4Swiper />
+      </section>
+
+      <SecBreak />
     </main>
   );
 }

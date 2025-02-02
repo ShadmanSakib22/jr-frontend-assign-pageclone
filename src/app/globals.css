@@ -48,13 +48,16 @@ body {
   }
 
   .text-head-6 {
-    @apply text-[12px] leading-[1.5] tracking-[1.44px] font-bold lg:text-[16px] lg:leading-[1.5] lg:tracking-[2.56px];
+    @apply text-[12px] leading-[1.5] tracking-[1.44px] font-bold lg:text-[16px] lg:leading-[1.5] lg:tracking-[2.56px] uppercase;
   }
 
   .text-link {
     @apply text-[18px] leading-[23px] font-semibold;
   }
 
+  .text-body-0 {
+    @apply text-base lg:text-lg font-semibold leading-[180%];
+  }
   .text-body-1 {
     @apply text-sm lg:text-base text-[#164377];
   }
