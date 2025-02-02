@@ -61,6 +61,9 @@ body {
   .text-body-1 {
     @apply text-sm lg:text-base text-[#164377];
   }
+  .text-body-2 {
+    @apply text-sm lg:text-base;
+  }
 }
 
 /*------------------------------------------------------------------*/
@@ -110,11 +113,35 @@ body {
 .bg-cta-style {
   background: radial-gradient(
     62.05% 69.64% at 33.72% -3.27%,
-    rgb(0, 233, 234) 0%,
-    rgb(31, 128, 240) 52.08%,
-    rgb(0, 91, 196) 100%
+    #00e9ea 0%,
+    #1f80f0 52.08%,
+    #005bc4 100%
   );
-  clip-path: polygon(0 0, 100% 49%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 14%, 100% 100%, 0% 100%);
+}
+
+@media (min-width: 768px) {
+  .bg-cta-style {
+    background: radial-gradient(
+      62.05% 69.64% at 33.72% -3.27%,
+      #00e9ea 0%,
+      #1f80f0 52.08%,
+      #005bc4 100%
+    );
+    clip-path: polygon(0 0, 100% 29%, 100% 100%, 0% 100%);
+  }
+}
+
+@media (min-width: 1280px) {
+  .bg-cta-style {
+    background: radial-gradient(
+      62.05% 69.64% at 33.72% -3.27%,
+      #00e9ea 0%,
+      #1f80f0 52.08%,
+      #005bc4 100%
+    );
+    clip-path: polygon(0 0, 100% 49%, 100% 100%, 0% 100%);
+  }
 }
 
 /*---------------------END HOME PAGE STYLES-----------------------------*/

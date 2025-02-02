@@ -29,7 +29,7 @@ const HomeSec5Stats = () => {
           key={index}
           className="flex lg:flex-col items-center border-dashed border-blueHighlight max-lg:border-b max-lg:justify-between max-lg:pb-4"
         >
-          <h2 className="text-[40px] md:text-[64px] lg:text-[96px] font-montserrat tracking-[-0.02em] font-semibold leading-none bg-gradient-to-b from-blueMain via-blueMain to-[#0057BB] inline-block text-transparent bg-clip-text">
+          <h2 className="text-[48px] md:text-[64px] lg:text-[96px] font-montserrat tracking-[-0.02em] font-semibold leading-none bg-gradient-to-b from-blueMain via-blueMain to-[#0057BB] inline-block text-transparent bg-clip-text">
             {stat.prefix}
             <CountUp
               end={stat.number}

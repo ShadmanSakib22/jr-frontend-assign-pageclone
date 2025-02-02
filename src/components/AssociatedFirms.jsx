@@ -52,11 +52,15 @@ const AssociatedFirms = () => {
           speed={800}
           breakpoints={{
             360: {
-              slidesPerView: 3,
+              slidesPerView: 2.7,
               spaceBetween: 30,
             },
             576: {
-              slidesPerView: 4,
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+            640: {
+              slidesPerView: 3.5,
               spaceBetween: 30,
             },
           }}
