@@ -50,7 +50,7 @@ const Navbar = () => {
                   </div>
 
                   {isSolutionsDropdownOpen && (
-                    <div className="absolute top-full left-[12x] mt-2 w-[240px] bg-white rounded-[3 px] shadow-lg text-left">
+                    <div className="absolute top-full left-[12x] mt-2 w-[240px] bg-white rounded-[3px] shadow-lg text-left">
                       <div className="py-1">
                         <a
                           href="#"
@@ -90,7 +90,7 @@ const Navbar = () => {
             </nav>
           </div>
           <Link
-            href="/"
+            href="https://www.linkedin.com/in/shadman-sakib-3b8bb3298/"
             className="group border border-white bg-transparent hover:bg-white hover:text-blueMain hidden lg:flex items-center max-lg:w-full max-lg:justify-center max-lg:mt-16 pl-6 pr-10 py-[13px] text-link transition-all rounded-[3px] hover:shadow-button-primary"
           >
             Contact Us
@@ -172,7 +172,7 @@ const Navbar = () => {
               </li>
             </ul>
             <Link
-              href="/"
+              href="https://www.linkedin.com/in/shadman-sakib-3b8bb3298/"
               className="mt-8 text-link text-center border border-white bg-transparent py-3 px-6 rounded-[3px] flex items-center justify-center w-full group"
             >
               Contact Us
